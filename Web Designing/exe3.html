@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Alignment with Text</title>
+    <style>
+        .image-container {
+            text-align: center; 
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            width: 300px;
+            height: auto;
+        }
+
+        .left-align img {
+            float: left;
+            margin-right: 15px;
+        }
+
+        .right-align img {
+            float: right;
+            margin-left: 15px;
+        }
+
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Image Alignment Example</h1>
+
+    <div class="image-container left-align">
+        <img src="https://static.wikia.nocookie.net/beluga/images/d/dc/CatGod.png/revision/latest?cb=20231209015119" alt="Image">
+        <p>This is some text that wraps around the image. The image is aligned to the left.</p>
+        <p>Additional text continues here. You can add more content as needed.</p>
+    </div>
+
+    <div class="clear"></div>
+
+    <div class="image-container">
+        <img src="https://static.wikia.nocookie.net/beluga/images/d/dc/CatGod.png/revision/latest?cb=20231209015119" alt="Image">
+        <p>This text is around the centered image. The image is placed in the center of the container.</p>
+    </div>
+
+    <div class="clear"></div>
+
+    <!-- Right Aligned Image with Text -->
+    <div class="image-container right-align">
+        <img src="https://static.wikia.nocookie.net/beluga/images/d/dc/CatGod.png/revision/latest?cb=20231209015119" alt="Image">
+        <p>This is some text that wraps around the image. The image is aligned to the right.</p>
+        <p>Additional content is displayed here with the image aligned to the right side.</p>
+    </div>
+
+</body>
+</html>

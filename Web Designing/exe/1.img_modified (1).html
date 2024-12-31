@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vertical Div Layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        border: 1px solid #ccc;
+      }
+      .container img {
+        width: 200px;
+        height: auto;
+      }
+      .container:nth-child(1) img {
+        order: -1;
+        margin-right: 10px;
+      }
+      .container:nth-child(2) {
+        justify-content: center;
+      }
+      .container:nth-child(2) p {
+        margin: 0 10px;
+      }
+      .container:nth-child(3) img {
+        order: 1;
+        margin-left: 10px;
+      }
+      .container p {
+        flex: 1;
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://static.wikia.nocookie.net/beluga/images/d/dc/CatGod.png/revision/latest?cb=20231209015119"
+        alt="Image 1"
+      />
+      <p>
+        First div: Text occupies the remaining space after the image on the
+        left.
+      </p>
+    </div>
+    <div class="container">
+      <p>Second div: Text on the left</p>
+      <img
+        src="https://static.wikia.nocookie.net/beluga/images/d/dc/CatGod.png/revision/latest?cb=20231209015119"
+        alt="Image 2"
+      />
+      <p>and on the right of the centered image.</p>
+    </div>
+    <div class="container">
+      <p>
+        Third div: Text occupies the remaining space before the image on the
+        right.
+      </p>
+      <img
+        src="https://static.wikia.nocookie.net/beluga/images/d/dc/CatGod.png/revision/latest?cb=20231209015119"
+        alt="Image 3"
+      />
+    </div>
+  </body>
+</html>

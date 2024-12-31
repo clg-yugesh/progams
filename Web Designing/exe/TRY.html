@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vertical Div Layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        border: 1px solid #ccc;
+      }
+      .container img {
+        width: 200px;
+        height: auto;
+      }
+      .container:nth-child(1) img {
+        order: -1;
+        margin-right: 10px;
+      }
+      .container:nth-child(2) {
+        justify-content: center;
+      }
+      .container:nth-child(2) p {
+        margin: 0 10px;
+      }
+      .container:nth-child(3) img {
+        order: 1;
+        margin-left: 10px;
+      }
+      .container p {
+        flex: 1;
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src=""
+        alt="Image 1"
+      />
+      <p>
+        In many cultures and religions, the term "Lord" carries a deep sense of reverence and authority. It is often used to refer to a divine being or supreme power, such as in Christianity, where "Lord" is a title for God or Jesus Christ. In Hinduism, deities like Lord Vishnu or Lord Shiva are worshipped with devotion and respect. The word signifies not just power, but also love, guidance, and protection, reflecting the central role that these divine figures play in the lives of their followers. The title of "Lord" invokes a sense of awe and humility, reminding believers of the higher forces that govern the universe.
+      </p>
+    </div>
+    <div class="container">
+      <p>In many cultures and religions, the term "Lord" carries a deep sense of reverence and authority. It is often used to refer to a divine being or supreme power, such as in Christianity, where "Lord" is a title for God or Jesus Christ. In Hinduism, deities like Lord Vishnu or Lord Shiva are worshipped with devotion and respect.</p>
+      <img
+        src=""
+        alt="Image 2"
+      />
+      <p> The word signifies not just power, but also love, guidance, and protection, reflecting the central role that these divine figures play in the lives of their followers. The title of "Lord" invokes a sense of awe and humility, reminding believers of the higher forces that govern the universe..</p>
+    </div>
+    <div class="container">
+      <p>
+        In many cultures and religions, the term "Lord" carries a deep sense of reverence and authority. It is often used to refer to a divine being or supreme power, such as in Christianity, where "Lord" is a title for God or Jesus Christ. In Hinduism, deities like Lord Vishnu or Lord Shiva are worshipped with devotion and respect. The word signifies not just power, but also love, guidance, and protection, reflecting the central role that these divine figures play in the lives of their followers. 
+        The title of "Lord" invokes a sense of awe and humility, reminding believers of the higher forces that govern the universe.
+      </p>
+      <img
+        src="0000000000000"
+        alt="Image 3"
+      />
+    </div>
+  </body>
+</html>
+
