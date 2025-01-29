@@ -1,0 +1,37 @@
+body {
+  background-color: rgb(231, 231, 230);
+  margin: 0px;
+  font-family: sans-serif, 'Times New Roman', Times, serif;
+}
+input {
+  display: block;
+  margin-bottom: 2em;
+  border-radius: 3px;
+  border: 1px black solid;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+.container {
+  border: 1.5px solid black;
+  padding: 10px;
+}
+.parents-container{
+  border: 1.5px solid black;
+  padding: 10px;
+}
+.right{
+
+}
+.block:nth-child(4) {
+  display: flex;
+}
+.iframe-container {
+  display: block;
+  margin: 0 auto;
+}
+footer {
+  background-color: rgb(80, 80, 80);
+  color: white;
+  padding: 10px;
+}
